@@ -26,6 +26,12 @@
       "includePaths": ["**.docx**"]
     },
     {
+      "id": "genvar-poc-v2",
+      "title": "Generate Variations POC V2",
+      "event": "genvar-poc-v2",
+      "environments": [ "dev", "preview" ]
+    },
+    {
       "id": "mystique-playground",
       "title": "Mystique Playground",
       "event": "mystique-playground",
