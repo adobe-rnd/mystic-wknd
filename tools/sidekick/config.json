@@ -28,7 +28,7 @@
     {
       "id": "genvar-poc-v2",
       "title": "Generate Variations POC V2",
-      "event": "genvar-poc-v2",
+      "event": "genvar-poc",
       "environments": [ "dev", "preview" ]
     },
     {
