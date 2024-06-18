@@ -4,7 +4,7 @@
   const genvar = async ({ detail }) => {
     // const sk = detail.data;
     const script = document.createElement('script');
-    script.src = 'http://localhost:4081/';
+    script.src = 'http://localhost:4081/static/js/bundle.js';
     script.type = 'text/javascript';
     script.async = true;
     document.head.appendChild(script);
