@@ -1,4 +1,4 @@
-const EVENT_NAME = 'mystique-playground';
+const MYSTIQUE_PLAYGROUND_EVENT = 'mystique-playground';
 
 const mystique = async ({ detail }) => {
   // const sk = detail.data;
@@ -11,10 +11,10 @@ const mystique = async ({ detail }) => {
 
 const sk = document.querySelector('helix-sidekick');
 if (sk) {
-  sk.addEventListener(`custom:${EVENT_NAME}`, mystique);
+  sk.addEventListener(`custom:${MYSTIQUE_PLAYGROUND_EVENT}`, mystique);
 } else {
   document.addEventListener('sidekick-ready', () => {
     document.querySelector('helix-sidekick')
-      .addEventListener(`custom:${EVENT_NAME}`, mystique);
+      .addEventListener(`custom:${MYSTIQUE_PLAYGROUND_EVENT}`, mystique);
   }, { once: true });
 }

@@ -1,4 +1,4 @@
-const EVENT_NAME = 'mystique-playground';
+const GENVAR_EVENT = 'genvar';
 
 const genvar = async ({ detail }) => {
   // const sk = detail.data;
@@ -11,10 +11,10 @@ const genvar = async ({ detail }) => {
 
 const sk = document.querySelector('helix-sidekick');
 if (sk) {
-  sk.addEventListener(`custom:${EVENT_NAME}`, genvar);
+  sk.addEventListener(`custom:${GENVAR_EVENT}`, genvar);
 } else {
   document.addEventListener('sidekick-ready', () => {
     document.querySelector('helix-sidekick')
-      .addEventListener(`custom:${EVENT_NAME}`, genvar);
+      .addEventListener(`custom:${GENVAR_EVENT}`, genvar);
   }, { once: true });
 }
